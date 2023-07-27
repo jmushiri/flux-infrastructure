@@ -62,3 +62,8 @@ spec:
     kind: GitRepository
     name: flux-demo
   targetNamespace: default
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: AtlasSchema
+      name: myapp
+      namespace: default
