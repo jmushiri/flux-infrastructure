@@ -64,6 +64,6 @@ spec:
   targetNamespace: default
   healthChecks:
     - apiVersion: apps/v1
-      kind: AtlasSchema
+      kind: CustomResourceDefinition
       name: myapp
       namespace: default
