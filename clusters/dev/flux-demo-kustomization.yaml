@@ -19,7 +19,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30s
-  path: ./kustomize/db.yaml
+  path: ./kustomize
   prune: true
   sourceRef:
     kind: GitRepository
@@ -40,7 +40,7 @@ spec:
   dependsOn:
     - name: mysql
   interval: 30s
-  path: ./kustomize/schema.yaml
+  path: ./kustomize
   prune: true
   sourceRef:
     kind: GitRepository
@@ -61,7 +61,7 @@ spec:
   dependsOn:
     - name: myapp
   interval: 30s
-  path: ./kustomize/app.yaml
+  path: ./kustomize
   prune: true
   sourceRef:
     kind: GitRepository
