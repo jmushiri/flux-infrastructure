@@ -18,7 +18,7 @@ metadata:
   name: mysql
   namespace: flux-system
 spec:
-  interval: 10s
+  interval: 30s
   path: ./kustomize
   prune: true
   sourceRef:
@@ -39,7 +39,7 @@ metadata:
 spec:
   dependsOn:
     - name: mysql
-  interval: 10s
+  interval: 30s
   path: ./kustomize
   prune: true
   sourceRef:
@@ -55,7 +55,7 @@ metadata:
 spec:
   dependsOn:
     - name: myapp
-  interval: 10s
+  interval: 30s
   path: ./kustomize
   prune: true
   sourceRef:
