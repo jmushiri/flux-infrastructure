@@ -63,7 +63,7 @@ spec:
     name: flux-demo
   targetNamespace: default
   healthChecks:
-    - apiVersion: apps/v1
+    - apiVersion: db.atlasgo.io/v1alpha1
       kind: AtlasSchema
       name: myapp
       namespace: default
