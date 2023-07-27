@@ -48,7 +48,7 @@ spec:
   targetNamespace: default
   healthChecks:
     - apiVersion: apps/v1
-      kind: AtlasSchema
+      kind: Deployment
       name: myapp
       namespace: default
 ---
