@@ -46,11 +46,6 @@ spec:
     kind: GitRepository
     name: flux-demo
   targetNamespace: default
-  healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: myapp
-      namespace: default
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
@@ -67,3 +62,8 @@ spec:
     kind: GitRepository
     name: flux-demo
   targetNamespace: default
+    healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: myapp
+      namespace: default
